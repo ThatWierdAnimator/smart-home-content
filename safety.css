@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #005DFF;
+    position:  fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .current {
+    color: yellow;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font: 2em sans-serif;
+    font-weight: bold;
+}
