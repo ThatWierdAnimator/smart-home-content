@@ -23,7 +23,10 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    transform: translate(-8px, -8px);
+    transform: translate(-11px, -11px);
+    padding: 12px 0px;
+    border-style: solid;
+    z-index: 1;
 }
 
 nav a {
@@ -35,6 +38,23 @@ nav a {
 
 nav .current {
     color: yellow;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(60px);
+    padding-bottom: 60px;
+}
+
+header article {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 627px;
+    height: 353px;
 }
 
 section {
