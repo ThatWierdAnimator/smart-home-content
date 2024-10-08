@@ -2,12 +2,7 @@
     font: 1em sans-serif;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-h2 {
+h1, h2 {
     font-size: 36px;
     font-weight: bold;
 }
@@ -45,8 +40,8 @@ header {
     flex-direction: row;
     padding-top: 137px;
     padding-bottom: 60px;
-    padding-left: 120px;
-    padding-right: 250px;
+    padding-left: 5.86vw;
+    padding-right: 12.21vw;
 }
 
 header article {
@@ -69,6 +64,8 @@ header article section {
 
 header article h3 {
     background-color: #005DFF;
+    border-color: black;
+    color: white;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -84,7 +81,6 @@ header article h3:nth-of-type(2) {
 }
 
 header article h3 i {
-    color: white;
     padding-right: 10px;
 }
 
@@ -95,6 +91,27 @@ header img {
     border-radius: 10px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    align-self: center;
+}
+
+.line {
+    align-self: center;
+    width: 120%;
+    background-color: black;
+    height: 3px;
+    padding: 0;
+}
+
+main .padding {
+    padding-bottom: 69px;
+}
+
 section {
     display: flex;
     justify-content: space-between;
@@ -103,7 +120,7 @@ section {
     padding-right: 5.81vw;
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(4) {
     flex-direction: row-reverse;
 }
 
@@ -135,4 +152,8 @@ section a {
     font-size: 32px;
     font-weight: bold;
     align-self: start;
+}
+
+a:hover {
+    color: yellow;
 }
