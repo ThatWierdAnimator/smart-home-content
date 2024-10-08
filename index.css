@@ -43,18 +43,56 @@ nav .current {
 header {
     display: flex;
     flex-direction: row;
-    transform: translateY(60px);
+    padding-top: 137px;
     padding-bottom: 60px;
+    padding-left: 120px;
+    padding-right: 250px;
 }
 
 header article {
     display: flex;
     flex-direction: column;
+    padding-left: 90px;
+    transform: translateY(-37px);
+}
+
+header article h2 {
+    transform: translateY(30px);
+}
+
+header article section {
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    transform: translate(-100px, 4px);
+}
+
+header article h3 {
+    background-color: #005DFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 3px;
+    padding: 7px 5px;
+    padding-right: 20px;
+}
+
+header article h3:nth-of-type(2) {
+    transform: translateX(46px);
+}
+
+header article h3 i {
+    color: white;
+    padding-right: 10px;
 }
 
 header img {
-    width: 627px;
-    height: 353px;
+    width: 830px;
+    height: 470px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 section {
