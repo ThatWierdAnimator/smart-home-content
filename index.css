@@ -157,3 +157,28 @@ section a {
 a:hover {
     color: yellow;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #2300bf;
+    color: white;
+    width: 100vw;
+    transform: translate(-8px, 8px);
+    padding: 25px 0;
+}
+
+footer a {
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer p {
+    z-index: -1;
+    transform: translateX(-15px);
+    position: absolute;
+    text-align: end;
+    width: 99%;
+}

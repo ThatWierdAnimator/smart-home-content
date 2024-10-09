@@ -75,7 +75,7 @@ main {
     padding: 0 130px;
 }
 
-main section {
+main aside {
     padding: 54px 70px;
 }
 
@@ -83,7 +83,7 @@ main article {
     display: flex;
     flex-direction: column;
     width: 410px;
-    height: 623px;
+    height: 600px;
     background-color: #005DFF;
     color: white;
     border-style: solid;
@@ -103,4 +103,9 @@ main article img {
 
 p, h2 {
     padding: 0 23px;
+    transform: translateY(-15px);
+}
+
+p {
+    transform: translateY(-45px);
 }
