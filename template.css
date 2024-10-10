@@ -41,21 +41,21 @@ a:hover {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: column;
     transform: translate(-11px, 56px);
 }
 
 header img {
+    position: fixed;
+    z-index: -2;
     width: 100vw;
     height: 575px;
     object-fit: cover;
-    border-style: solid;
-    border-width: 3px;
 }
 
 header h1 {
-    position: absolute;
     background-color: #005DFF;
     color: white;
     width: 338px;
@@ -69,10 +69,14 @@ header h1 {
 }
 
 main {
+    align-self: center;
+    border-top: solid 3px black;
+    width: 100vw;
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    transform: translateY(59px);
+    transform: translateY(631px);
     padding: 0 130px;
 }
 
@@ -113,7 +117,7 @@ p {
 
 .padding {
     height: 10px;
-    padding: 46px;
+    padding: 0px;
 }
 
 footer {
@@ -123,7 +127,7 @@ footer {
     background-color: #2300bf;
     color: white;
     width: 100vw;
-    transform: translate(-8px, 8px);
+    transform: translate(-8px, 639px);
     padding: 25px 0;
 }
 
