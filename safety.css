@@ -1,0 +1,244 @@
+* {
+    font: 1em sans-serif;
+}
+
+h1, h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #005DFF;
+    position:  fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(-11px, -11px);
+    padding: 12px 0px;
+    border-style: solid;
+    z-index: 1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav .current {
+    color: yellow;
+}
+
+a:hover {
+    color: yellow;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-11px, 56px);
+}
+
+header img {
+    position: fixed;
+    z-index: -2;
+    width: 100vw;
+    height: 575px;
+    object-fit: cover;
+}
+
+header h1 {
+    background-color: #005DFF;
+    color: white;
+    width: 338px;
+    height: 70px;
+    padding-left: 33px;
+    align-content: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    transform: translate(78px, 10px);
+}
+
+main {
+    align-self: center;
+    border-top: solid 3px black;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(631px);
+    padding: 0 130px;
+}
+
+main aside {
+    padding: 54px 100px;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 600px;
+    background-color: #005DFF;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+main section {
+    position: absolute;
+    height: 301px;
+}
+
+main section img {
+    z-index: 0;
+    order: -1;
+    width: 535px;
+    height: 301px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    transition: width 1s, height 1s;
+}
+
+main input:hover:not(:checked) + section img, main input:hover:not(:checked) ~ article {
+    width: 550px;
+    height: 320px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+main section h2 {
+    text-align: right;
+    padding: 0 20px;
+    color: white;
+    z-index: 1;
+    transform: translateY(-90px);
+    transition: transform 1s;
+}
+
+main section h2.black {
+    color: black;
+}
+
+main article {
+    height: 301px;
+    width: 535px;
+    transition: width 1s, height 1s;
+}
+
+main article p {
+    opacity: 0;
+}
+
+aside {
+    margin: 0 200px;
+}
+
+input {
+    z-index: 2;
+    position: absolute;
+    width: 535px;
+    height: 301px;
+    opacity: 0;
+    transition: width 1s, height 1s;
+}
+
+aside {
+    transition: transform 1s;
+}
+
+aside:nth-child(odd):not(:has(input:checked)) {
+    transform: translateX(-500px);
+}
+
+aside:nth-child(even):not(:has(input:checked)) {
+    transform: translateX(500px);
+}
+
+input:checked {
+    width: 1250px;
+    height: 495px;
+}
+
+input:checked + section img {
+    height: 350px;
+}
+
+input:checked + section + article {
+    width: 1250px;
+    height: 350px;
+}
+
+input:checked + section h2 {
+    text-align: left;
+    transform: translateY(-370px);
+}
+
+aside:nth-child(odd) > input:checked + section + article p {
+    opacity: 1;
+    font-size: 20px;
+    width: 700px;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+    transform: translateX(550px);
+}
+
+aside:nth-child(even) > input:checked + section + article p {
+    opacity: 1;
+    font-size: 20px;
+    width: 700px;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+    padding-left: 10px;
+}
+
+aside {
+    display: flex;
+}
+
+aside:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+aside:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+footer {
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    background-color: #2300bf;
+    color: white;
+    width: 100vw;
+    transform: translate(-8px, 639px);
+    padding: 25px 0;
+}
+
+footer a {
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer p {
+    z-index: -1;
+    transform: translateX(-30px);
+    position: absolute;
+    text-align: end;
+    width: 99%;
+}

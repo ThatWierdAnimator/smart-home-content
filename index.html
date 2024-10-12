@@ -3,44 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d3daf7bcac.js" crossorigin="anonymous"></script>
+    <title>Home of the Future | Home</title>
 </head>
 <body>
+    <!--
+                ,.           .,     :25L.       7Fui                                           .,.          :            .         :.    ...      :   
+     B@B@Br   .B@@@@Z  G@B@B@B@@  7B@@@B@BY   GB@B@@@B.       ;B@BL   ,     .@@B: @@@77B@@@B@@@B@BP FB@B7  B@B@Y        @B@B@u    @B@B@NLB@B@    B@@Z 
+    u@B@B@B  .B@@@B@B M@@@B@B@@@ M@@B@B@B@B :@B@B@B@B@B       8@B@B  BB@@L  B@B@UqB@B@i@@@B@B@B@B@E B@B@@  @@@BO       :B@B@B@   @B@B@@@7@B@B.  B@B@B 
+    @B@B@B@  B@B@B@Bu @B@BX     @B@B@ :B@B@L@B@BP M@@BB       @B@Bi OB@B@: B@B@5 B@B@r  7,@B@B@    :@B@@  BB@B@        B@B@B@@  @B@B@B@B J@B@u B@B@Z  
+   u@@B@@@B.B@B@B@B@ uB@B@.    7B@B@. B@B@X@@@@@  @@B@.       B@@@ uB@B@@ q@B@B J@@@@    ,B@B@.    @@@BL  B@B@;       ,@B@B@B@,MB@B@B@B: .B@B@@@B@5   
+   B@B@B@@@@@B@B@B@Y B@B@B@B@r :@@@BS  X@B E@B@B. r@@F       :@B@0vB@B@@MU@B@@  @@@B;    B@B@B    .B@B@qkB@B@B        @B@B@B@B@B@B@B@B@   @@@B@B@v    
+  r@B@Oq@@B@B@X@B@B r@B@B@B@@u  .@@@B@v     1@B@BB.          JB@B@B@@@B@B@B@B. vB@B@    :@B@B.    G@B@B@B@@@B:       .@@B@1@B@B@BqB@B@:   r@B@B@:     
+  @B@B.i@@@B@,uB@@1 @B@B,     ..  .0@B@BF .   7@@B@B:        0@@@B@BOB@B@B@B7  @@B@r    @B@B@     @B@BFrBB@@@        E@@@L B@B@Bv:@B@@    JB@B@       
+  B@B@ :B@B@i B@B@ rB@B@U0B@ iB@BM. i@B@B@B@BL  Z@B@B        @B@B@BZ @B@@@@E  ,@B@B     B@B@.    EB@B2  B@@@:        @B@B  @@@BN @B@Br    B@B@i       
+ q@B@k  @B@Z U@B@M S@B@B@B@B@ vB@B@B@B@B@ M@@B@B@B@Bv        B@B@@@  B@B@@@   BB@BU    q@B@B    .B@B@  v@B@@        YB@B@  B@B@ .@@@@    L@B@@        
+ .M@B     .  .8@B.  r@B@E2r:    7BB@@@8i   .k@B@B@u          7B@B@   7M@B@    ,8@@     ,Z@Bi     UB@O  .P@B7         8B@i    .   NB@v    .M@Bu        
+                                                                                                                                                      
+                                                                                                                                                      
+                                            .          rYr.                                                   ..                                      
+        L@B@:         :@B@  28B@B@B@B  FB@B@B@B@F   .MB@B@B@2  @B@L,8BB@B@B@@@B@ iXM@@B@B@E                 1@B@B@B:  .@B@P,  u@BM  X@B@B@B@u         
+        @@@B@  B@B@:  @B@B7r@B@B@B@B@.@B@B@B@B@@@P L@@@B@B@B@:.B@B@7@B@B@B@B@B@B B@@@B@B@B@                k@B@B@B@r  @B@@@B  @B@B;2@B@B@@@B@B.       
+        B@B@. M@@@B. @B@BS @@@B@      B@B@F  :B@B@U@B@BY @B@BiG@@@B  uiOB@B@    7@B@Br                    S@B@B@B@B  ,B@B@B@ vB@B@ @B@B@  P@B@B       
+       .@B@B F@B@@@ MB@B@ :B@B@r     j@B@B  8B@B@u@B@BF LB@B@.@B@B.    B@B@q    @B@B@                    U@B@M.B@B@  B@@@B@B.B@B@  B@B@i  ,B@B@       
+       7B@BF7@B@B@q5@@B@  B@@@B@B@1  @B@B@B@@@Bu  B@B@8  P@@ UB@BB    2@B@B    ;B@B@B@B@                L@@@8  @@@B  @@@@@B@B@B@@ Z@B@@   B@B@B       
+       P@@@B@B@@@B@B@B@  ,@B@B@B@B@ :B@B@B@@@B@    B@B@Bu    B@B@.    @B@@q    B@B@B@B@@i              i@B@B0LOB@@@ PB@BBB@B@B@B: @@@B.  E@B@Bi       
+       @B@B@B@M@B@B@B@i  @B@Bv      B@B@i  XB@B@     EB@B@k r@@@B    7@@B@    ,@B@B                   .@B@@@@@B@B@k B@B@ X@@B@B@ 7@@B0 .B@B@@u        
+       B@@@@@1 B@B@B@S  :B@@@uY0M:  @B@@.i@B@B@M@B@M, .B@B@B@B@B:    B@B@P    @B@BB7k8E               @B@B@BGuG@@Bj:@@@B r@B@@@L B@B@X8B@B@Bi         
+       @B@B@B  @B@B@B   v@B@B@@@B@  B@B@B@B@@B. :@B@B@B@B@B5B@B@    .@B@B     B@B@B@B@BN  B@M.       @B@Bi    i@B@k@@@Bi  B@B@B  @@@B@B@B@J           
+       k@B@B   S@B@@     ;@B@BGu7:  .Z@B@B8;      7B@B@B@u  EB@r     8@BM      Z@B@OXvi  @@B@;       u@@j     .B@Bu:B@@    N@@0   FB@@@k:             
+                                                                                        @@B@.                                                         
+                                                                                        7v:                                                 @B@B:     
+                                                 @BJ                                                                                       LB@B@J     
+        1@@Bv    B@B:   XB@B@Or    7@@v   @B@L  XB@@   ,uM@B@B@U    jPB@@B@B@         5M@B@@@M7     YSMB@B@B@     BB@@@@G   jO@B@B@Bu      B@B@B      
+        :@B@B   B@B@Y 7@B@B@B@B@   @B@Bq iB@B@. B@Bi  B@B@B@@@B@B  @B@B@B@B@@.       @B@@@B@B@@@   kB@B@B@B@Br   @B@B@B@B  YB@B@B@@@@@,   F@B@B.      
+         B@B@  B@B@J J@B@BJ @@@B  @B@B@  B@B@B u@@E  r@B@@j  X@B@. B@B@O             B@B@B..BB@@@  B@B@@        @B@B@B@B@  B@@@@: kB@B@   @B@Bj       
+         SB@@BB@B@v :@B@Bu  B@B@  @@B@7  @B@@r  :.   @B@BP  L@B@B L@B@B             v@B@B:  i@B@B i@B@@i       @B@Bur@B@G  @B@BX   @B@B. kB@B@        
+          @B@B@@@i  @B@BM  .@@@B M@B@B  @B@@@       iB@@@2PB@@@B  @@@B@@@B:         @B@B@   @@@BB @B@B@B@BL   M@@Bu vB@B5 1B@B@   5B@B@  B@@@,        
+          B@B@B@,  LB@B@   @B@B2 @B@B: ,@@@@r       B@B@B@B@BO:  vB@B@@@B@G        .B@B@   8B@B@  B@B@B@B@B  N@@B@77B@B@r B@B@Y  vB@B@5 7@B@B         
+          OB@B@    O@B@O  rB@B@ iB@B@  B@B@B        @B@B@@@B     B@B@i             P@B@F  @B@B@7 M@B@L      J@@B@B@B@B@B. @@@B  GB@B@M    .r          
+          B@B@     8B@BS :B@B@v U@B@5 q@B@B        XB@B58@B@B   7@@@BrrFk          @B@@2P@B@B@i .@B@BL;2k  :B@B@B@MSB@B@.XB@BZJ@B@B@U   .             
+         O@B@M      @B@B@B@B@j   B@B@B@@@B.        @@B@  U@B@B8 ZB@B@B@@@B        .@@B@B@B@@2   uB@B@B@B@B.B@@@     @B@B.M@@@B@B@B8    B@B@,          
+         iO@B        ;kMB@GL      vEM@MGr          SM@i    LO@B  rOMq5Lr:.          vMBBPv       :GM0SYr:  uB@      iB@@  :8BBEj.      @B@B                   -->
+    <nav>
+        <a href="index.html" class="current">HOME</a>
+        <a href="convenience.html">CONVENIENCE</a>
+        <a href="safety.html">SAFETY</a>
+        <a href="entertainment.html">ENTERTAINMENT</a>
+    </nav>
     <header>
-        <h1>The Home of the Future</h1>
+        <img src="images/house.png" alt="Futuristic House">
+        <article>
+            <h1>The Home of the Future</h1>
+            <p>Step into a world where convenience and innovation converge in a spectacular symphony of technology and design. This extraordinary property, as seen in Ray Bradbury’s vision of the future, redefines modern living with its cutting-edge features and seamless automation. This home is not just a residence; it’s a glimpse into the future of living, where every detail is meticulously crafted to offer unparalleled convenience and comfort. Immerse yourself in a lifestyle where technology and elegance coexist harmoniously.</p>
+            <h2>$413,000</h2>
+            <section>
+                <h3><i class="fa-solid fa-house fa-3x"></i> 4,500 sq. ft.</h3>
+                <h3><i class="fa-solid fa-ruler-combined fa-3x"></i> $92 per sq. ft.</h3>
+            </section>
+        </article>
     </header>
     <main>
-        <article>
-            <img src="images/house.png" alt="Futuristic House" width="70%">
-            <p>Step into a world where convenience and innovation converge in a spectacular symphony of technology and design. This extraordinary property, as seen in Ray Bradbury’s vision of the future, redefines modern living with its cutting-edge features and seamless automation. This home is not just a residence; it’s a glimpse into the future of living, where every detail is meticulously crafted to offer unparalleled convenience and comfort. Immerse yourself in a lifestyle where technology and elegance coexist harmoniously.</p>
-        </article>
+        <h1>FEATURES</h1>
+        <section class="line"></section>
+        <section class="padding"></section>
         <section>
-            <h2>Convenience Devices</h2>
-            <img src="images/convenience_device.png" alt="convenience device" width="50%">
-            <p>Step into a world where daily chores become a breeze with our cutting-edge automation technology. Our home features a suite of advanced convenience devices designed to streamline your life effortlessly. Imagine a house that handles everything from automated cleaning and meal preparation to climate control and energy management with precision and ease. With voice-activated controls, intuitive wall panels displaying daily schedules and weather updates, and intelligent systems that anticipate your needs, this home ensures you enjoy ultimate comfort without lifting a finger. Discover how our state-of-the-art technology transforms everyday living into an unparalleled experience of convenience and luxury.</p>
-            <a href="convenience.html">Click here to learn more</a>
+            <section>
+                <h2>Convenience Devices</h2>
+                <p>Step into a world where daily chores become a breeze with our cutting-edge automation technology. Our home features a suite of advanced convenience devices designed to streamline your life effortlessly. Imagine a house that handles everything from automated cleaning and meal preparation to climate control and energy management with precision and ease. With voice-activated controls, intuitive wall panels displaying daily schedules and weather updates, and intelligent systems that anticipate your needs, this home ensures you enjoy ultimate comfort without lifting a finger. Discover how our state-of-the-art technology transforms everyday living into an unparalleled experience of convenience and luxury.</p>
+                <a href="convenience.html">LEARN MORE</a>
+            </section>
+            <section>
+                <img src="images/convenience_device.png" alt="convenience device">
+            </section>
         </section>
         <section>
-            <h2>Safety devices</h2>
-            <img src="images/safety_device.png" alt="safety device" width="50%">
-            <p>Step into unparalleled security with our cutting-edge home, equipped with state-of-the-art safety devices that offer complete peace of mind. Our advanced security system includes fire extenguishers, motion detectors, and automated locks that provide comprehensive protection around the clock. Seamlessly integrated into the home’s infrastructure, these features work together to ensure your safety with real-time monitoring and automatic responses to any potential threats. Enjoy the ultimate in security and tranquility, knowing that your home is safeguarded by the most sophisticated technology available.</p>
-            <a href="safety.html">Click here to learn more</a>
+            <section>
+                <h2>Safety devices</h2>
+                <p>Step into unparalleled security with our cutting-edge home, equipped with state-of-the-art safety devices that offer complete peace of mind. Our advanced security system includes fire extenguishers, motion detectors, and automated locks that provide comprehensive protection around the clock. Seamlessly integrated into the home’s infrastructure, these features work together to ensure your safety with real-time monitoring and automatic responses to any potential threats. Enjoy the ultimate in security and tranquility, knowing that your home is safeguarded by the most sophisticated technology available.</p>
+            <a href="safety.html">LEARN MORE</a>
+            </section>
+            <section>
+                <img src="images/safety_device.png" alt="safety device">
+            </section>
         </section>
         <section>
-            <h2>Entertainment Devices</h2>
-            <img src="images/entertainment_device.png" alt="entertainment device" width="50%">
-            <p>Welcome to a home where entertainment is redefined by advanced technology. Our property features a suite of high-tech entertainment devices designed to immerse you in a world of endless enjoyment. From interactive media panels that offer instant access to your favorite content to intelligent systems that seamlessly integrate music, movies, and games throughout the house, every moment is tailored to your preferences. With voice-activated controls and responsive technology that anticipates your entertainment needs, this home ensures that relaxation and fun are always at your fingertips.</p>
-            <a href="entertainment.html">Click here to learn more</a>
+            <section>
+                <h2>Entertainment Devices</h2>
+                <p>Welcome to a home where entertainment is redefined by advanced technology. Our property features a suite of high-tech entertainment devices designed to immerse you in a world of endless enjoyment. From interactive media panels that offer instant access to your favorite content to intelligent systems that seamlessly integrate music, movies, and games throughout the house, every moment is tailored to your preferences. With voice-activated controls and responsive technology that anticipates your entertainment needs, this home ensures that relaxation and fun are always at your fingertips.</p>
+            <a href="entertainment.html">LEARN MORE</a>
+            </section>
+            <section>
+                <img src="images/entertainment_device.png" alt="entertainment device">
+            </section>
         </section>
     </main>
     <footer>
-        <hr>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="convenience.html">Convenience</a> |
-            <a href="safety.html">Safety</a> |
-            <a href="entertainment.html">Entertainment</a>
-        </nav>
+        <a href="index.html">HOME</a>
+        <a href="convenience.html">CONVENIENCE</a>
+        <a href="safety.html">SAFETY</a>
+        <a href="entertainment.html">ENTERTAINMENT</a>
+        <p>©Future Homes 2024</p>
     </footer>
 </body>
 </html>
