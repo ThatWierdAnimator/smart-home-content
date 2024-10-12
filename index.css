@@ -1,6 +1,5 @@
 * {
     font: 1em sans-serif;
-    overflow-x: none;
 }
 
 h1, h2 {
@@ -11,7 +10,7 @@ h1, h2 {
 body {
     display: flex;
     flex-direction: column;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 nav {
