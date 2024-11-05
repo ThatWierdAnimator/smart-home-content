@@ -36,77 +36,53 @@ nav .current {
     color: yellow;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    padding-top: 137px;
-    padding-bottom: 60px;
-    padding-left: 5.86vw;
-    padding-right: 12.21vw;
+a:hover {
+    color: yellow;
 }
 
-header article {
+header {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
-    transform: translateY(-37px);
-}
-
-header article h2 {
-    transform: translateY(30px);
-}
-
-header article section {
-    display: flex;
-    justify-content: start;
-    align-self: start;
-    transform: translate(-100px, 4px);
-}
-
-header article h3 {
-    background-color: #005DFF;
-    border-color: black;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    border-style: solid;
-    border-width: 3px;
-    padding: 7px 5px;
-    padding-right: 20px;
-}
-
-header article h3:nth-of-type(2) {
-    transform: translateX(46px);
-}
-
-header article h3 i {
-    padding-right: 10px;
+    transform: translate(-11px, 56px);
 }
 
 header img {
-    width: 830px;
-    height: 470px;
+    position: fixed;
+    z-index: -2;
+    width: 100vw;
+    height: 575px;
+    object-fit: cover;
+}
+
+header h1 {
+    background-color: #005DFF;
+    color: white;
+    width: 338px;
+    height: 70px;
+    padding-left: 33px;
+    align-content: center;
     border-style: solid;
     border-radius: 10px;
+    border-color: black;
+    transform: translate(78px, 10px);
 }
 
 main {
+    align-self: center;
+    border-top: solid 3px black;
+    width: 100vw;
+    background-color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateY(631px);
+    padding: 0 130px;
+    padding-top: 100px;
 }
 
-main h1 {
-    align-self: center;
-}
-
-.line {
-    align-self: center;
-    width: 120%;
-    background-color: black;
-    height: 3px;
-    padding: 0;
+p {
+    font-size: 18px;
 }
 
 main .padding {
@@ -121,7 +97,7 @@ section {
     padding-right: 5.81vw;
 }
 
-section:nth-of-type(4) {
+section:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
@@ -155,10 +131,6 @@ section a {
     align-self: start;
 }
 
-a:hover {
-    color: yellow;
-}
-
 footer {
     border-top: 3px solid black;
     display: flex;
@@ -166,7 +138,7 @@ footer {
     background-color: #2300bf;
     color: white;
     width: 100vw;
-    transform: translate(-8px, 8px);
+    transform: translate(-8px, 639px);
     padding: 25px 0;
 }
 
@@ -179,7 +151,7 @@ footer a {
 
 footer p {
     z-index: -1;
-    transform: translateX(-15px);
+    transform: translateX(-30px);
     position: absolute;
     text-align: end;
     width: 99%;

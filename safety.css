@@ -143,8 +143,8 @@ main article p {
     opacity: 0;
 }
 
-main article p {
-    opacity: 0;
+aside {
+    margin: 0 200px;
 }
 
 input {
@@ -154,6 +154,18 @@ input {
     height: 301px;
     opacity: 0;
     transition: width 1s, height 1s;
+}
+
+aside {
+    transition: transform 1s;
+}
+
+aside:nth-child(odd):not(:has(input:checked)) {
+    transform: translateX(-500px);
+}
+
+aside:nth-child(even):not(:has(input:checked)) {
+    transform: translateX(500px);
 }
 
 input:checked {
@@ -175,7 +187,7 @@ input:checked + section h2 {
     transform: translateY(-370px);
 }
 
-input:checked + section + article p {
+aside:nth-child(odd) > input:checked + section + article p {
     opacity: 1;
     font-size: 20px;
     width: 700px;
@@ -184,35 +196,25 @@ input:checked + section + article p {
     transform: translateX(550px);
 }
 
+aside:nth-child(even) > input:checked + section + article p {
+    opacity: 1;
+    font-size: 20px;
+    width: 700px;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+    padding-left: 10px;
+}
+
 aside {
-    transition: padding 1s;
+    display: flex;
 }
 
-aside section, aside article *:not(p) {
-    transition: opacity 1s, width 1s, height 1s;
+aside:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-aside:has(>input:checked):nth-child(odd) + aside {
-    padding: 0;
-}
-
-aside:has(>input:checked):nth-child(odd) + aside * {
-    width: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
-}
-
-aside:has(+aside:nth-child(even) > input:checked) * {
-    width: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
-}
-
-.padding {
-    height: 10px;
-    padding: 0px;
+aside:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 footer {
